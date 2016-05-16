@@ -1,0 +1,28 @@
+{
+    "name": "titledk/silverstripe-identity",
+    "description": "Store your project's identity colors in yml, and sync them to scss etc.",
+    "type": "silverstripe-module",
+    "homepage": "https://github.com/titledk/silverstripe-identity",
+    "keywords": [
+        "silverstripe",
+        "identity",
+        "colors",
+        "colours",
+        "scss",
+    ],
+    "authors": [
+        {
+            "name": "Anselm Christophersen",
+            "email": "ac@anselm.dk"
+        }
+    ],
+    "extra": {
+        "installer-name": "identity",
+    },
+    "require": {
+        "silverstripe/framework": "^3.1"
+    },
+    "support": {
+        "issues": "https://github.com/titledk/silverstripe-identity/issues"
+    }
+}
