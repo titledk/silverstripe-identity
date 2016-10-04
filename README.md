@@ -3,6 +3,8 @@
 Store your project's identity colors in yml,
 and sync them to other places - see `tasks/IdentifyToScss.php`.
 
+Run `/dev/tasks/IdentityToScss`
+
 ## Example config
 
 ```yml

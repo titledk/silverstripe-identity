@@ -15,12 +15,18 @@ class IdentityToScss extends BuildTask
      */
     public function run($request)
     {
+        echo 'Syncing identities to sass file:';
         $colors = Identity::get_colors();
         $str = '';
+        echo '<ul>';
         foreach ($colors as $name => $c) {
             $str .= '$identity-color-' . $name . ': ' . $c . ';' . "\n";
+            echo "<li><em>$name:</em> <strong>$c</strong></li>";
         }
+        echo '</ul>';
+        echo 'Sync done.';
         $base = str_replace('/public', '', Director::baseFolder());
+        //TODO this one should be configurable
         $file = "$base/resources/sass/_identity_synced.scss";
         file_put_contents($file,$str);
     }
